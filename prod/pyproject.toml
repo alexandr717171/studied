@@ -2,8 +2,8 @@
 name = "prod"
 version = "0.1.0"
 description = ""
-authors = ["Alexandr"]
-
+authors = ["alexandr"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -13,6 +13,7 @@ django-filter = "^24.1"
 django-debug-toolbar = "^4.3.0"
 pillow = "^10.2.0"
 gunicorn = "^21.2.0"
+spectacular = "^0.4.0"
 
 
 [build-system]

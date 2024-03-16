@@ -33,6 +33,8 @@ SECRET_KEY = getenv(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getenv("DJANGO_DEBUG", "0") == "1"
 
+
+print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@',getenv("DJANGO_DEBUG"), DEBUG)
 ALLOWED_HOSTS = [
     "127.0.0.1",
     "0.0.0.0",
@@ -183,7 +185,7 @@ logging.config.dictConfig({
     "disable_existing_loggers": False,
     "formatters": {
         "console": {
-            "format": "%(asctime)s %(levelname) [%(name)s %(lineno)s] %(module)s %(message)s)",
+            "format": "%(asctime)s %(levelname)s [%(name)s %(lineno)s] %(module)s %(message)s)",
         },
     },
     "handlers": {
